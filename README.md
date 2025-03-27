@@ -12,9 +12,10 @@ jmcomic包详细使用请查阅：https://github.com/hect0x7/JMComic-Crawler-Pyt
 
 (后续更新也在这里)
 
-'''
-git clone https://github.com/Ayachi2225/astrbot_plugin_jmcomicsget.git
-'''
+`git clone https://github.com/Ayachi2225/astrbot_plugin_jmcomicsget.git`
+
+然后运行`pip install -r requirements.txt`安装依赖项
+
 
 使用例：输入：/jm 本子编号 或 /jm 包含着本子编号的字符串
 
