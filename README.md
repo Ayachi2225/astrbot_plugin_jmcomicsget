@@ -8,9 +8,11 @@ A template plugin for AstrBot
 
 jmcomic包详细使用请查阅：https://github.com/hect0x7/JMComic-Crawler-Python
 
-安装：请将本插件clone到"AstrBot\data\plugins"中
+安装：
+1.在astrbot插件市场中直接安装jmcomicsget
 
-(后续更新也在这里)
+
+2.将本插件clone到"AstrBot\data\plugins"中
 
 `git clone https://github.com/Ayachi2225/astrbot_plugin_jmcomicsget.git`
 
