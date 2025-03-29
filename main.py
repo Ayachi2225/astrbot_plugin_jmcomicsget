@@ -23,7 +23,7 @@ class MyPlugin(Star):
         target_file = os.path.join(current_dir, 'option.yml')
         option = jmcomic.JmOption.from_file(target_file)
         jmcomic.download_album(s, option)
-        file = [Comp.File(file=f"D:\\jmcomic_files\\{s}.pdf",name=f"{s}.pdf")]  # 从本地文件目录发送pdf
+        file = [Comp.File(file=f"file:///D:\\jmcomic_files\\{s}.pdf",name=f"{s}.pdf")]  # 从本地文件目录发送pdf
         # file = [Comp.Image.fromFileSystem(f"D:\\jmcomic_files\\{event.message_str[3:]}.pdf")]  # 从本地文件目录发送pdf
         yield event.chain_result(file)
     # async def uploda_file(self, event: AstrMessageEvent):

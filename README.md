@@ -29,5 +29,3 @@ jmcomic包详细使用请查阅：https://github.com/hect0x7/JMComic-Crawler-Pyt
 
 ps：目前本插件仅能借助napcat发送文件（lagrange不行），且仅在qq个人号windows napcat上成功运行了。
 
-后续更新：
-我猜现在估计只能下载单本本子，多章本子估计报错，后续可能改进
