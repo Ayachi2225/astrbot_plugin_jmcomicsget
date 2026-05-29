@@ -16,7 +16,7 @@ jmcomic包详细使用请查阅：https://github.com/hect0x7/JMComic-Crawler-Pyt
 
 `git clone https://github.com/Ayachi2225/astrbot_plugin_jmcomicsget.git`
 
-然后运行`pip install -r requirements.txt`安装依赖项
+然后astrbot会自动下载依赖项，如果下载失败可以在终端中激活uv隔离的虚拟环境然后手动下载依赖`pip install requirements.txt`（注意在插件目录下），不会找和激活虚拟环境的自行问ai
 
 
 使用例：输入：/jm 本子编号 或 /jm 包含着本子编号的字符串
