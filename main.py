@@ -33,6 +33,7 @@ class MyPlugin(Star):
         jmcomic.download_album(s, option)
         file = [Comp.File(file=f"file:///{pdf_dir}\\{s}.pdf",name=f"{s}.pdf")]  # 从本地文件目录发送pdf
 
+        # file = [Comp.Image.fromFileSystem(f"D:\jmcomic_files\{event.message_str[3:]}.pdf")]  # 从本地文件目录发送pdf
         yield event.chain_result(file)
 
 
