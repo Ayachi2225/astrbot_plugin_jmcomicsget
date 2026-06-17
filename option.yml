@@ -7,12 +7,12 @@ client:
       headers: null
       impersonate: chrome110
       proxies:
-        http: 127.0.0.1:7890
-        https: 127.0.0.1:7890
+        http: 127.0.0.1:7897
+        https: 127.0.0.1:7897
     type: cffi
   retry_times: 5
 dir_rule:
-  base_dir: D:\jmcomic_files
+  base_dir: D:/jmcomic_files
   rule: Bd_Pname
 download:
   cache: true
@@ -43,7 +43,7 @@ plugins:
     # 使用前需要安装依赖库: [pip install img2pdf]
     - plugin: img2pdf
       kwargs:
-        pdf_dir: D:\jmcomic_files # pdf存放文件夹
+        pdf_dir: pdfs # pdf存放文件夹
         filename_rule: Pid # pdf命名规则，P代表photo, id代表使用photo.id也就是章节id
 
     # img2pdf也支持合并整个本子，把上方的after_photo改为after_album即可。
@@ -52,6 +52,4 @@ plugins:
 
 
     # 插件来源：https://github.com/hect0x7/JMComic-Crawler-Python/pull/294
-
-
 
