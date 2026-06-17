@@ -12,7 +12,7 @@ client:
     type: cffi
   retry_times: 5
 dir_rule:
-  base_dir: D:/jmcomic_files
+  base_dir: pdfs
   rule: Bd_Pname
 download:
   cache: true

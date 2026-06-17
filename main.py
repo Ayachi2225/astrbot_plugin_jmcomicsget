@@ -30,6 +30,11 @@ class MyPlugin(Star):
                 plugin_entry.kwargs.pdf_dir = pdf_dir
                 break
 
+        # 动态设置 base_dir 为当前目录下的 pdfs 文件夹（绝对路径）
+        base_dir = os.path.join(current_dir, 'pdfs')
+        os.makedirs(base_dir, exist_ok=True)
+        option.dir_rule.base_dir = base_dir
+
         jmcomic.download_album(s, option)
         file = [Comp.File(file=f"file:///{pdf_dir}\\{s}.pdf",name=f"{s}.pdf")]  # 从本地文件目录发送pdf
 
